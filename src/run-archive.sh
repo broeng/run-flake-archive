@@ -51,4 +51,4 @@ git add .
 git commit -m "import from ${ARCHIVE_URL}"
 
 # run the default app from the downloaded flake
-nix run .#${FLAKE_TARGET}
+nix run --extra-experimental-features flakes --extra-experimental-features nix-command .#${FLAKE_TARGET}
