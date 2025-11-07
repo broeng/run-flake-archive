@@ -41,6 +41,7 @@ curl --config - -D- --fail -o $DEST_ARCHIVE "${ARCHIVE_URL}" <<< $CURL_CONFIG
 # Unpack the archive
 cd $DEST_REPO
 $UNPACK_CMD
+chmod +w $DEST_REPO
 # Create a repository with the contents
 git init .
 git config user.email "nix@example.com"
