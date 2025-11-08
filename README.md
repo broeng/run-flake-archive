@@ -15,7 +15,7 @@ Will optionally accept a username and password for Basic auth through the enviro
 Downloading and running the `flake.nix` located at the root of the `my-artifact.tgz` archive:
 
 ```
-nix run github:broeng/run-flake-archive -- https://repository.domaint.tld/my-artifact.tgz
+nix run github:broeng/run-flake-archive -- https://repository.domain.tld/my-artifact.tgz
 ```
 
 As the archive will be unpackaged and added to the temporary git repository, the flake is
